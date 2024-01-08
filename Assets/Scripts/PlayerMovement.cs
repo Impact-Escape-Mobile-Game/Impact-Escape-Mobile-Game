@@ -50,9 +50,11 @@ public class PlayerMovement : MonoBehaviour
         {
             anim.SetTrigger("dancing");
             m_Speed = 0f;
-           // TabtoNextBtn.SetActive(true);
+            TabtoNextBtn.SetActive(true);
+            
 
         }
+        
     }
 
     private IEnumerator SlowAfterAWhileCoroutine()

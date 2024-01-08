@@ -9,7 +9,7 @@ public class loadSaved : MonoBehaviour
     void Start()
     {
         //PlayerPrefs datasinin tamamani siler. Sunum oncesi bir kez yorumu kaldirip kaldirdikten sonra yorum satirini ekleyerek sunum yapabilirsin.
-        // PlayerPrefs.DeleteAll();
+        PlayerPrefs.DeleteAll();
 
     }
 
