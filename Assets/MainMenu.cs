@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
         
+    public float delay= 3f;
     public void StartGame()
     {
         SceneManager.LoadScene(1);
@@ -17,5 +18,15 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
+    public void Restart()
+    {
+        
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void Start()
+    {
+        
+    }
 
 }
