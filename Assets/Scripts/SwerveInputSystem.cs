@@ -5,10 +5,19 @@ using UnityEngine;
 public class SwerveInputSystem : MonoBehaviour
 {
     private float _lastFrameFingerPositionX;
-        private float _moveFactorX;
-        public float MoveFactorX => _moveFactorX;
-    
-        private void Update()
+    private float _moveFactorX;
+    public float MoveFactorX => _moveFactorX;
+
+    private PlayerMovement playerMovement;
+
+    private void Start()
+    {
+        playerMovement = GetComponent<PlayerMovement>();
+    }
+
+    private void Update()
+    {
+        if (!playerMovement.IsFinished)  // Check if the player has not finished
         {
             if (Input.GetMouseButtonDown(0))
             {
@@ -24,4 +33,5 @@ public class SwerveInputSystem : MonoBehaviour
                 _moveFactorX = 0f;
             }
         }
+    }
 }

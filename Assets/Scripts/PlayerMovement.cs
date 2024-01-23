@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
     public float m_Speed;
     public Animator anim;
     public GameObject TabtoNextBtn;
-
+    private bool isFinished = false;
     void Start()
     {
         //Fetch the Rigidbody component you attach from your GameObject
@@ -19,10 +19,13 @@ public class PlayerMovement : MonoBehaviour
         //Set the speed of the GameObject
         m_Speed = 9.0f;
     }
-    
+
     void FixedUpdate()
     {
-        rb.velocity = Vector3.left * m_Speed;
+        if (!isFinished)
+        {
+            rb.velocity = Vector3.left * m_Speed;
+        }
     }
 
 
@@ -45,16 +48,22 @@ public class PlayerMovement : MonoBehaviour
             StartCoroutine(FastAfterAWhileCoroutine());
 
         }
-        
+
         if (col.gameObject.tag == "Finish")
         {
             anim.SetTrigger("dancing");
             m_Speed = 0f;
             TabtoNextBtn.SetActive(true);
-            
+            isFinished = true;
 
+            // Stop swerve movement
+            SwerveMovement swerveMovement = GetComponent<SwerveMovement>();
+            if (swerveMovement != null)
+            {
+                swerveMovement.SetFinished(true);
+            }
         }
-        
+
     }
 
     private IEnumerator SlowAfterAWhileCoroutine()
@@ -64,13 +73,18 @@ public class PlayerMovement : MonoBehaviour
         anim.SetBool("fast", false);
     }
 
-    
+
     private IEnumerator FastAfterAWhileCoroutine()
     {
         yield return new WaitForSeconds(2.0f);
         m_Speed = 9.0f;
         anim.SetBool("slow", false);
     }
-    
-    
+
+    public bool IsFinished
+    {
+        get { return isFinished; }
+    }
+
+
 }
