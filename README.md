@@ -20,7 +20,7 @@ Oyunun ana hedef kitlesi 6-12 yaş arası çocuklardır. Ancak tüm yaş gruplar
 5. Kontroller:
 Oyun, dokunmatik ekran üzerinden oynanır. Oyuncu, Tayyip'i sağa sola yönlendirmek için ekrana dokunarak hareket ettirir.
 
-6. Grafikler 
+6. Grafikler:
 Oyun, canlı ve renkli 3D grafiklerle tasarlanmıştır.
 
 7. Seviye Tasarımı:
