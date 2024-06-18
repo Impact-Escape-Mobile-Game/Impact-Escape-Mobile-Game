@@ -1,28 +1,32 @@
-Oyun Adı: Impact Escape: Mobile Game
+## Impact Escape: Mobile Game
 
-GDD (Oyun Tasarım Dokümanı)
+### Game Design Document (GDD)
 
-1. Oyunun Konusu:
-"Impact Escape: Mobile Game", 16 yaşındaki lise öğrencisi Tayyip'in günlük maceralarını konu alan bir 3D mobil oyunudur. Tayyip, her sabah okula yetişmek için otobüsü yakalamak zorundadır. Ancak yolda karşısına çıkan engelleri aşarak ve hızlanıcıları kullanarak otobüse zamanında yetişmeye çalışır.
+1. **Game Concept:**
+"Impact Escape: Mobile Game" is a 3D mobile game that revolves around the daily adventures of Tayyip, a 16-year-old high school student. Tayyip has to catch the bus to school every morning. However, he encounters various obstacles on the way and uses boosters to try to reach the bus on time.
 
-2. Oyun Mekaniği:
-Oyun, 3D perspektiften oynanır ve oyuncu, dokunmatik ekranı kullanarak Tayyip'i sağa sola yönlendirir.
-Tayyip, sokak boyunca koşarken önüne çıkan arabalar, yol çalışmaları ve diğer engelleri aşmaya çalışır.
-Oyuncu, hızlanıcıları kullanarak Tayyip'in hızını artırabilir ancak dikkatli olmalıdır, aşırı hız kontrolü zorlaştırabilir veya Tayyip'i engellere çarpabilir.
-Oyun, seviye sistemiyle ilerler. Her seviye daha zorlu engellerle doludur ve Tayyip'in otobüse ulaşması her seviyede daha zorlaşır.
+2. **Game Mechanics:**
+   - The game is played from a 3D perspective, and the player navigates Tayyip left and right using the touch screen.
+   - Tayyip runs along the street, attempting to overcome obstacles such as cars, road construction, and other hindrances.
+   - Players can use boosters to increase Tayyip's speed, but they must be cautious as excessive speed can make it harder to control or lead Tayyip to collide with obstacles.
+   - The game progresses through a level system. Each level is filled with more challenging obstacles, making it increasingly difficult for Tayyip to catch the bus.
 
-3. Oyunun Amacı:
-Oyunun amacı, Tayyip'in otobüse zamanında yetişmesine yardımcı olmaktır. Oyuncular, zamanı iyi yönetme ve engelleri aşma becerilerini geliştirirken eğlenirler.
+3. **Objective of the Game:**
+   The objective is to help Tayyip catch the bus on time. Players have fun while developing skills in time management and obstacle navigation.
 
-4. Hedef Kitle:
-Oyunun ana hedef kitlesi 6-12 yaş arası çocuklardır. Ancak tüm yaş grupları tarafından oynanabilir.
+4. **Target Audience:**
+   The primary target audience for the game is children aged 6-12 years old, although it is enjoyable for all age groups.
 
-5. Kontroller:
-Oyun, dokunmatik ekran üzerinden oynanır. Oyuncu, Tayyip'i sağa sola yönlendirmek için ekrana dokunarak hareket ettirir.
+5. **Controls:**
+   The game is played using touch screen controls. Players touch the screen to move Tayyip left or right.
 
-6. Grafikler:
-Oyun, canlı ve renkli 3D grafiklerle tasarlanmıştır.
+6. **Graphics:**
+   The game features vibrant and colorful 3D graphics.
 
-7. Seviye Tasarımı:
-Oyun, günlük seviyelerle ilerler. Her seviye, Tayyip'in otobüsü zamanında yakalamak için daha zorlu engeller sunar.
-Seviyeler, artan trafik, yol çalışmaları ve diğer engellerle doludur.
+7. **Level Design:**
+   - The game progresses through daily levels, each presenting more challenging obstacles for Tayyip to overcome in order to catch the bus on time.
+   - Levels are filled with increasing traffic, road constructions, and other obstacles.
+
+---
+
+This GDD outlines "Impact Escape: Mobile Game," a dynamic 3D adventure where players assist Tayyip in navigating through daily challenges to reach his school bus on time.
